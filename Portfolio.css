@@ -1,0 +1,81 @@
+/* RESET */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* NAVBAR AT TOP */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  z-index: 1000;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+#navbar a:hover {
+  color: #00aaff;
+}
+
+/* WELCOME SECTION FULL HEIGHT */
+#welcome-section {
+  height: 100vh; /* REQUIRED */
+  background: linear-gradient(to bottom right, #003366, #3399ff);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* PROJECTS SECTION */
+#projects {
+  padding: 60px 20px;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+.project-tile {
+  margin: 30px auto;
+  max-width: 320px;
+  background: white;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.project-tile img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.project-tile p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+/* MEDIA QUERY REQUIREMENT */
+@media (max-width: 600px) {
+  #navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #welcome-section h1 {
+    font-size: 1.8rem;
+  }
+}
